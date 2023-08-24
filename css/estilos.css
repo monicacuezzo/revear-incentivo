@@ -387,6 +387,9 @@ h2{
     line-height: 28px;
     font-family: 'klavika-regular', sans-serif;
 }
+.footer .footer__links a:hover{
+    opacity: 0.8;
+}
 .footer h2{
     height: 26px;
     font-size: 20px;
