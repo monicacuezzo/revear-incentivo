@@ -528,6 +528,9 @@ h2{
     .ranking__participacion{
         margin: 30px auto;
     }
+    .top-ranking{
+        margin-bottom: 30px;
+    }
     .top-indicador {
         font-size: 18px;
     }
