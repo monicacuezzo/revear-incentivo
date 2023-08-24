@@ -79,7 +79,7 @@ h2{
 }
 #performance .performance__objetivo{
     width: 44%;
-    max-width: 632px;
+    max-width:42.3vw; /*632px;*/
     height: 136px;
     background: #FFC510;
     margin: auto;
@@ -110,7 +110,7 @@ h2{
 .puntos-columna__texto{
     color: #fff;
     width: 100%;
-    max-width: 232px;
+    max-width:16vw; /*232px;*/
     font-size: 1.7vw;
     font-weight: 600;
     margin: auto;
@@ -216,10 +216,12 @@ h2{
     background: #fff;
     border: #232221 3px solid;
     width: max-content;
-    padding:20px 32px 20px 32px;
     border-radius: 9px;
     margin: 50px auto;
     align-items: center;
+}
+.ranking__cartel:not(.btn-comun){
+    padding:20px 32px 20px 32px;
 }
 .ranking__cartel img{
     margin-right: 10px;
@@ -228,6 +230,9 @@ h2{
     color: #232221;
     font-size: 2.3vw;
     font-weight: 600;
+}
+.ranking__cartel:not(.btn-comun) p {
+    font-size: 1.7vw;
 }
 .ranking__participacion{
     width: 80%;
@@ -326,7 +331,7 @@ h2{
     font-weight: 600;
     cursor: pointer;
     height: 140px;
-    max-width: 640px;
+    max-width:42.3vw; /*640px;*/
     width: 44%;
     justify-content: center;
     align-items: center;
@@ -456,6 +461,7 @@ h2{
     }
     #performance .performance__objetivo{
         width: 240px;
+        max-width: 240px;
         height: 55px;
         margin: 20px auto;
     }
@@ -473,6 +479,7 @@ h2{
     }
     .puntos-columna__texto{
         width: auto;
+        max-width: 85px;
         font-size: 9px;
         display: flex;
         flex-grow: 1;
@@ -522,7 +529,7 @@ h2{
     .ranking__cartel img {
         height: 18px;
     }
-    .ranking__cartel p {
+    .ranking__cartel p,.ranking__cartel:not(.btn-comun) p {
         font-size: 12px;
     }
     .ranking__participacion{
@@ -537,7 +544,7 @@ h2{
     .participacion{
         height: 215px;
         padding: 12px;
-        border-radius: 4.3vw;
+        border-radius: 4.2vw;
         justify-content: space-between;
         margin: 5px;
     }
@@ -592,5 +599,18 @@ h2{
 @media (max-width:429.98px){
     .ranking__cartel{
         width: 230px;
+    }
+}
+
+@media (min-width:2000px){
+    .performance__grafico p.porcentaje {
+         font-size: 89px;
+    }
+    .footer, .footer .footer__links a,.footer h2{
+        font-size: 1.2vw;
+        line-height: 1.5vw;
+    }
+    .footer .footer__redes a .spotify {
+        margin-bottom: -11px;
     }
 }
