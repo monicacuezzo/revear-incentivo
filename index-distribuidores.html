@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
+    <meta name="description" content="">
+    <meta name="keywords" content=""/>
+	<meta name="HandheldFriendly" content="true">
+
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="js/jQuery3.6.4.js"></script>
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+
+    <title>REVEAR - Plataforma incentivo</title>
+</head>
+<body>
+    <header class="flex">
+        <img class="header__logo" src="img/logo-revear.png" alt="¿Para qué pintar si podes REVEAR?">
+        <div id="usuario" class="flex">
+            <img src="/img/ico-usu.svg" alt="Usuario" id="usuario__foto">
+            <p id="usuario__nom">Distribuidor Colorprint</p>
+        </div>
+    </header>
+    <main>
+        <section id="presentacion">
+            <h1>REVEAR - Plataforma incentivo</h1>
+            <img src="img/presentacion.webp" alt="¿Para qué pintar si podes REVEAR?">
+        </section>
+        <section id="performance">
+            <h2>Mi performance</h2>
+            <div class="performance__datos flex">
+                <div class="cartel flex">
+                    <img src="img/ico-distrib-amarillo.svg" alt="">
+                    <p>
+                        <span>Colorprint Argentina </span>
+                    </p>
+                </div>
+                <div class="cartel flex">
+                    <img src="img/ico-actualizacion.svg" alt="">
+                    <p>Última actualización: 
+                        <span>03/09/23</span>
+                    </p>
+                </div>
+            </div>
+            <div class="performance__objetivo flex">
+                <img src="img/ico-objetivo.svg" alt="">
+                <p>Objetivo:  
+                    <span>200.000</span>
+                </p>
+            </div>
+            <div class="performance__puntos flex">
+                <div class="puntos-columna">
+                    <p class="puntos-columna__texto">Puntos ganados última quincena </p>
+                    <p class="puntos-columna__importe">24.000</p>
+                </div>
+                <div class="puntos-columna bordes">
+                    <p class="puntos-columna__texto">Puntos acumulados</p>
+                    <p class="puntos-columna__importe">36.000</p>
+                </div>
+                <div class="puntos-columna">
+                    <p class="puntos-columna__texto">Puntos para  lograr el objetivo</p>
+                    <p class="puntos-columna__importe">164.000</p>
+                </div>
+            </div>
+            <div class="performance__grafico">
+                <p>Performance</p>
+                <div style="--porcentaje: 18" class="performance__porcentaje">
+                    <svg width="360" heigth="360">
+                        <!-- <circle r="150" cx="50%" cy="50%" pathlength="100"></circle> -->
+                        <!-- <circle r="150" cx="50%" cy="50%" pathlength="100"></circle> -->
+                        <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                        <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                    </svg>
+                    <p class="porcentaje flex">18<span>%</span></p>
+                </div>
+            </div>
+
+            <div class="performance__qr cartel flex">
+                <img src="img/ico_qrcode-scan.svg" alt="" >
+                <p>Escaneos acumulados: <span>5.000</span> </p>
+            </div>
+        </section>
+        <section id="ranking">
+            <h2>Ranking de distribuidores
+                <span>Por cantidad de puntos acumulados</span>
+            </h2>
+            <div class="ranking__cartel flex">
+                <img src="img/ico-posicion.svg" alt="">
+                <p>Tu posición en el ranking de distribuidores <span>3</span></p>
+            </div>
+            <div class="ranking__participacion">
+                <div class="top-ranking flex">
+                    <div class="participacion flex">
+                        <p class="top-indicador">1</p>
+                        <img src="img/ico-distribuidor.svg" alt="">
+                        <p>Performance</p>
+                        <div class="participacion-grafico" style="--porcentaje: 30">
+                            <div style="--porcentaje: 50" >
+                                <svg width="100" heigth="100">
+                                    <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                                    <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                                </svg>
+                                <p class="porcentaje flex">50<span>%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="participacion flex">
+                        <p class="top-indicador">2</p>
+                        <img src="img/ico-distribuidor.svg" alt="">
+                        <p>Performance</p>
+                        <div class="participacion-grafico" style="--porcentaje: 30">
+                            <div style="--porcentaje: 25" >
+                                <svg width="100" heigth="100">
+                                    <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                                    <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                                </svg>
+                                <p class="porcentaje flex">25<span>%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="participacion flex selected">
+                        <p class="top-indicador">3</p>
+                        <img src="img/ico-distribuidor.svg" alt="">
+                        <p>Performance</p>
+                        <div class="participacion-grafico" style="--porcentaje: 30">
+                            <div style="--porcentaje: 18" >
+                                <svg width="100" heigth="100">
+                                    <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                                    <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                                </svg>
+                                <p class="porcentaje flex">18<span>%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="participacion flex">
+                        <p class="top-indicador">4</p>
+                        <img src="img/ico-distribuidor.svg" alt="">
+                        <p>Performance</p>
+                        <div class="participacion-grafico" style="--porcentaje: 30">
+                            <div style="--porcentaje: 12" >
+                                <svg width="100" heigth="100">
+                                    <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                                    <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                                </svg>
+                                <p class="porcentaje flex">12<span>%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="participacion flex">
+                        <p class="top-indicador">5</p>
+                        <img src="img/ico-distribuidor.svg" alt="">
+                        <p>Performance</p>
+                        <div class="participacion-grafico" style="--porcentaje: 30">
+                            <div style="--porcentaje: 10" >
+                                <svg width="100" heigth="100">
+                                    <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                                    <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                                </svg>
+                                <p class="porcentaje flex">10<span>%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="participacion flex">
+                        <p class="top-indicador">5</p>
+                        <img src="img/ico-distribuidor.svg" alt="">
+                        <p>Performance</p>
+                        <div class="participacion-grafico" style="--porcentaje: 30">
+                            <div style="--porcentaje: 10" >
+                                <svg width="100" heigth="100">
+                                    <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                                    <circle r="44%" cx="50%" cy="50%" pathlength="100"></circle>
+                                </svg>
+                                <p class="porcentaje flex">50<span>%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+             </div>
+        </section>
+        <div class="botonera">
+            <button class="btn-participo" onclick="$('#popupCP').show();">¿Cómo participo?</button>
+            <button class="ranking__cartel flex btn-comun" onclick="$('#popupPP').show();">
+                <img src="img/ico-puntos-premios.svg" alt="">
+                Sistema puntos y premios
+            </button>
+            <button class="ranking__cartel flex btn-comun" onclick="$('#popupBYC').show();">
+                <img src="img/ico-byc.svg" alt="">
+                Bases y condiciones
+            </button>
+        </div>
+        <div id="popupBYC" class="popup" style="display: none;">
+            <div class="popup__cuerpo">
+                <div class="popup__cerrar" onclick='$("#popupBYC").hide();'>x</div>
+                <p>BASES Y CONDICIONES DESAFÍO MAPEI</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt illum ut expedita modi ullam aliquid ipsam enim delectus harum praesentium dicta voluptatum necessitatibus laboriosam, in provident omnis veritatis exercitationem repudiandae quis nisi, inventore facilis blanditiis voluptates? Iure eos neque quia ipsam aliquid voluptatem qui, labore non culpa sapiente nulla.</p>
+            </div>
+        </div>
+        <div id="popupPP" class="popup" style="display: none;">
+            <div class="popup__cuerpo">
+                <div class="popup__cerrar" onclick='$("#popupPP").hide();'>x</div>
+                <p>PUNTOS Y PREMIOS</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt illum ut expedita modi ullam aliquid ipsam enim delectus harum praesentium dicta voluptatum necessitatibus laboriosam, in provident omnis veritatis exercitationem repudiandae quis nisi, inventore facilis blanditiis voluptates? Iure eos neque quia ipsam aliquid voluptatem qui, labore non culpa sapiente nulla.</p>
+            </div>
+        </div>
+        <div id="popupCP" class="popup" style="display: none;">
+            <div class="popup__cuerpo">
+                <div class="popup__cerrar" onclick='$("#popupCP").hide();'>x</div>
+                <p>COMO PARTICIPO</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt illum ut expedita modi ullam aliquid ipsam enim delectus harum praesentium dicta voluptatum necessitatibus laboriosam, in provident omnis veritatis exercitationem repudiandae quis nisi, inventore facilis blanditiis voluptates? Iure eos neque quia ipsam aliquid voluptatem qui, labore non culpa sapiente nulla.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer flex">
+        <div class="footer__links">
+            <h2>Sobre Revear</h2>
+            <hr>
+            <a href="https://www.revear.com.ar" target="_blank">Revear</a>
+            <a href="https://www.revear.com.ar/productos-para-particulares.html" target="_blank">Productos</a>
+            <a href="" target="_blank">Contactos</a>
+        </div>
+        <div class="footer__redes">
+            <h2>Seguinos</h2>
+            <hr>
+            <div class="footer__redes-links flex">
+                <a href="https://www.facebook.com/reveararg/" target="_blank"><div class="facebook"> <i class="fa-brands fa-facebook-f"></i></div></a>
+                <a href="https://www.instagram.com/reveararg/" target="_blank"><div class="instagram"> <i class="fa-brands fa-instagram"></i></div></a>
+                <a href="https://www.pinterest.com/reveararg/" target="_blank"><div class="pinterest"> <i class="fa-brands fa-pinterest-p"></i></div></a>
+                <a href="https://www.youtube.com/channel/UC-iXrheUeGNyEzGA32hRusQ" target="_blank"><div class="youtube"> <i class="fa-brands fa-youtube"></i></div></a>
+                <a href="https://open.spotify.com/user/reveararg" target="_blank"><div class="spotify"></div></a>
+            </div>
+        </div>
+        <div class="footer__logo flex">
+            <a href="https://arg.sika.com/" target="_blank"><img src="img/logo-sika.webp" alt="SIKA"></a>
+        </div>
+    </footer>
+</body>
+</html>
