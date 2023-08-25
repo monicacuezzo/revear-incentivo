@@ -451,6 +451,7 @@ h2{
         margin: 10px auto;
         align-items: center;
         justify-content: center;
+        width: 240px;
     }
     .cartel img {
         width: 20px;
@@ -565,7 +566,7 @@ h2{
         padding: 0 0 20px 0;
     }
     .botonera .ranking__cartel{
-        width: auto;
+        width: 80%;
         font-size: 10px;
         margin: 10px auto;
     }
