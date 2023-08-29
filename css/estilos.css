@@ -782,6 +782,35 @@ h2{
     .performance__qr p {
         font-size: 14px;
     }
+    #performance div.top20{
+        width: 80%;
+        max-width: 80%;
+    }
+    .top20__h3{
+        font-size: 16px;
+    }
+    .top20__fila{
+        font-size: 12px;
+        min-height: 30px;
+    }
+    .top20__celda:first-child {
+        width: 7vw;
+    }
+    .top20__celda:last-child{
+        min-width: 95px;
+    }
+    .representante .cartel img {
+        width: 7vw;
+    }
+    .representante .performance__qr p:nth-child(1) {
+        font-size: 3.3vw;
+    }
+    .representante .performance__qr p:nth-child(2) {
+        font-size: 2.55vw;
+    }
+    .representante .performance__qr p:nth-child(3), .representante .performance__qr .performance__qr-texto span {
+        font-size: 5vw;
+    }
     #ranking {
         padding-bottom: 30px;
     }
