@@ -78,9 +78,9 @@ h2{
             justify-content: space-between;
 }
 .vendedor .performance__datos{
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .cartel{
     border: #FFC510 3px solid;
@@ -841,6 +841,9 @@ h2{
     .ranking__cartel p,.ranking__cartel:not(.btn-comun) p {
         font-size: 12px;
     }
+    .vendedor #ranking .ranking__cartel p{
+        font-size: 15px;
+    }
     .ranking__participacion{
         margin: 30px auto;
     }
@@ -902,6 +905,10 @@ h2{
     .vd-ganadores h3 {
         font-size: 12px;
         padding-bottom: 30px;
+        margin: auto;
+    }
+    .vd-ganadores h3 span{
+        display: block;
     }
     .galeria {
         margin: 0 auto 10px auto;
