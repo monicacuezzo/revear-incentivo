@@ -192,6 +192,7 @@
                 adaptiveHeight: true,
                 customPaging:function(slider,index){var num=index+1;return '<div class="dot"></div>'}
             });
+            if($('.galeria ul li').length<2){$('.galeria ul').hide()};
 
             var image = document.getElementById('presentacion__img');
             var container = document.getElementById('presentacion');
