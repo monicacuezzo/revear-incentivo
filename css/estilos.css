@@ -45,6 +45,9 @@ section{
 #usuario__nom{
     margin-left: 15px;
 }
+#presentacion{
+    height: 37.5vw;
+}
 #presentacion img{
     width: 100%;
     height: auto;
@@ -68,12 +71,16 @@ h2{
 #performance h2{
     background: #FFC510;
     line-height: 11vw;
-
 }
 .performance__datos{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+}
+.vendedor .performance__datos{
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
 }
 .cartel{
     border: #FFC510 3px solid;
@@ -106,6 +113,15 @@ h2{
     font-weight: 600;
     margin: 15px auto 65px auto;
 }
+.vendedor #performance .performance__objetivo{
+    font-size: 2vw;
+    padding: 0px 4vw;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 100%;
+    height: 8vw;
+}
 .performance__puntos {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -116,6 +132,9 @@ h2{
     width: 64px;height: 64px;
     margin-right: 20px;
 } 
+.vendedor .performance__objetivo img{
+    width: 4vw;height: 4vw;
+}
 .puntos-columna{
     width: 30%;
     padding: 20px;
@@ -125,6 +144,9 @@ h2{
     border-left: 4px solid #FFC510;
     border-right: 4px solid #FFC510;
 }
+.borde-izq{
+    border-left: 4px solid #FFC510;
+}
 .puntos-columna__texto{
     color: #fff;
     width: 100%;
@@ -132,6 +154,9 @@ h2{
     font-size: 1.7vw;
     font-weight: 600;
     margin: auto;
+}
+.vendedor .puntos-columna__texto{
+    max-width: 18vw;
 }
 .puntos-columna__importe{
     color: #FFC510;
@@ -170,9 +195,37 @@ h2{
         -ms-flex-pack: center;
             justify-content: center;
 }
+.vendedor #performance .performance__qr{
+    margin-top: 4vw;
+}
+.representante .cartel img{
+    width: 4vw;
+}
+.representante .performance__datos .cartel img{
+    height: 1.5vw;
+    width: auto;
+    margin-right: 7px;
+}
+.representante .performance__qr .performance__qr-texto{
+    margin: 0 1vw;
+    align-items: center;
+}
 .performance__qr p{
+    color: #fff;
     font-size: 2.5vw;
     font-weight: 600;
+}
+.representante .performance__qr p, .representante .performance__qr .performance__qr-texto span{
+    font-size: 2vw;
+}
+.representante .performance__qr .performance__qr-texto span{
+    margin-left: 1vw;
+}
+.representante .performance__qr p:nth-child(2){
+    font-size: 1.55vw;
+}
+.representante .performance__qr p:nth-child(3), .representante .performance__qr .performance__qr-texto span{
+    font-size: 3vw;
 }
 .performance__qr p span{
     color: #FFC510;
@@ -235,9 +288,84 @@ h2{
             animation: rellenar .5s linear forwards;
 }
 
+.vendedor .participacion_cifra{
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+#performance .top20{
+    width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+    max-width: 63%;
+    margin-bottom: 5vw;
+}
+.top20__h3{
+    color: #FFC510;
+    font-size: 3vw;
+    font-weight: 600;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 4vw;
+}
+.top20__h3 img{
+    margin-right: 1.5vw;
+    width: 4.5vw;
+}
+.top20__fila{
+    background-color: #fff;
+    color: #232221;
+    font-size: 2.3vw;
+    font-weight: 600;
+    border-radius: 0.6vw;
+    padding: 1vw 1.5vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1vw;
+    height: 6.4vw
+}
+.top20__fila.top5{
+    background-color: #FFC510;
+}
+.top20__celda{
+    background-color: #FFC510;
+    padding: 0.4vw;
+    border-radius: 0.6vw;
+    text-align: center;
+}
+.top20__celda:first-child{
+    width: 5vw;
+    min-width: 5vw;
+}
+.top20__celda:last-child{
+    width: 19vw;
+    min-width: 19vw;
+}
+.top20__celda span{
+    margin-right: 5px;
+}
+.top20__fila.top5 .top20__celda{
+    background-color: #fff;
+}
+.top20__nombre{
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 2vw;
+}
+
 #ranking{
     background-color: #fff;
     padding-bottom: 80px;
+}
+.vendedor #ranking{
+    padding-bottom: 30px;
 }
 #ranking h2{
     width: 80%;
@@ -278,6 +406,9 @@ h2{
     margin: 50px auto 70px auto;
     overflow: auto;
 }
+.vendedor .ranking__participacion {
+    margin: 50px auto;
+}
 .ranking__participacion img{
     width: 80px;
 }
@@ -301,6 +432,11 @@ h2{
         -ms-flex-align: center;
             align-items: center;
 }
+.vendedor .participacion{
+    height: 250px;
+    padding: 0px 60px;
+    border-radius: 2vw;
+}
 .participacion.selected{
     opacity: 1;
     border: 4px solid #FFC510;
@@ -309,7 +445,15 @@ h2{
     font-size: 2vw;
     font-weight: 600;
 }
-
+.representante .participacion__tx2{
+    font-size: 1vw;
+}
+.representante .participacion__nombre{
+    height: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
 .participacion-grafico{
     position: relative;
 }
@@ -352,6 +496,43 @@ h2{
     stroke-dasharray: var(--porcentaje) 100;
     stroke: #232221;
 }
+
+.vd-ganadores{
+    background-color: #fff;
+    padding-bottom: 80px;
+    text-align: center;
+    color: #232221;
+    font-weight: 600;
+}
+.vd-ganadores h2{
+    width: 80%;
+    height: 3.5vw;
+    background-color: #fff;
+    margin: auto;
+    font-size: 2.5vw;
+    color: #232221;
+}
+.vd-ganadores h3{
+    display: block;
+    font-size: 1.7vw;
+    padding-bottom: 50px;
+}
+.galeria{
+    width: 80%;
+    margin: 0 auto 70px auto;
+}
+.galeria .slide{
+    border-radius: 2vw;
+    margin-bottom: 1.5vw;
+}
+.galeria .slide img{
+    border-radius: 2vw;
+}
+
+.slick-dots{text-align:center}
+.slick-dots >li{display:inline-block;margin:1vw;background-color:#232221;width: 1.6vw;height: 1.6vw;border-radius:50%}
+.slick-dots >.slick-active{background-color:#FFC510}
+
 
 .botonera{
     padding: 0 0 100px 0;
@@ -536,6 +717,9 @@ h2{
         height: 55px;
         margin: 20px auto;
     }
+    .vendedor #performance .performance__objetivo{
+        border-radius: 5px;
+    }
     .performance__objetivo img {
         width: 26px;
         height: 26px;
@@ -555,6 +739,9 @@ h2{
             -ms-flex-pack: justify;
                 justify-content: space-between;
     }
+    .vendedor .puntos-columna{
+        width: 50%;
+    }
     .puntos-columna__texto{
         width: auto;
         max-width: 85px;
@@ -566,9 +753,14 @@ h2{
             -ms-flex-positive: 1;
                 flex-grow: 1;
     }
-    
+    .vendedor .puntos-columna__texto {
+        max-width: 90%;
+    }
     .puntos-columna__importe {
         font-size: 18px;
+    }
+    .representante .puntos-columna__importe {
+        font-size: 14px;
     }
     .performance__grafico {
         padding: 20px 0;
@@ -593,10 +785,17 @@ h2{
     #ranking {
         padding-bottom: 30px;
     }
+    .vendedor #ranking {
+        padding-bottom: 1px;
+    }
     #ranking h2{
         font-size: 18px;
         padding-bottom: 3vw;
         border-radius: 0px 0px 3.3vw 3.3vw;
+    }
+    .representante #ranking h2{
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
     }
     #ranking h2 span {
         font-size: 10px;
@@ -616,6 +815,9 @@ h2{
     .ranking__participacion{
         margin: 30px auto;
     }
+    .vendedor .ranking__participacion{
+        margin: 30px auto 10px auto;
+    }
     .top-ranking{
         margin-bottom: 30px;
     }
@@ -631,12 +833,29 @@ h2{
                 justify-content: space-between;
         margin: 5px;
     }
+    .vendedor .participacion{
+        padding: 0px 30px;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+    .representante .participacion{
+        min-width: 140px;
+        height: 315px;
+        border-radius: 3.2vw;
+    }
     .participacion-grafico p{
         font-size: 22px;
     }
     .participacion>p:not(.top-indicador){
         font-size: 14px;
     }
+    .vendedor p.participacion_cifra{
+        font-size: 18px;
+    }
+    .representante p.participacion__tx2{
+        font-size: 10px;
+    }
+    
     .ranking__participacion img {
         width: 50px;
     }
@@ -644,6 +863,24 @@ h2{
         width: 80px;
         height: 80px;
     }
+    .vd-ganadores {
+        padding-bottom: 30px;
+    }
+    .vd-ganadores h2{
+        font-size: 20px;
+        height: auto;
+    }
+    .vd-ganadores h3 {
+        font-size: 12px;
+        padding-bottom: 30px;
+    }
+    .galeria {
+        margin: 0 auto 10px auto;
+    }
+    .slick-dots >li{
+        width: 10px;height: 10px;
+    }
+
     .botonera {
         padding: 0 0 20px 0;
     }
@@ -691,6 +928,10 @@ h2{
 @media (min-width:2000px){
     .performance__grafico p.porcentaje {
          font-size: 89px;
+    }
+    .vendedor .participacion{
+        border-radius: 1.3vw;
+        height: 290px;
     }
     .footer, .footer .footer__links a,.footer h2{
         font-size: 1.2vw;
