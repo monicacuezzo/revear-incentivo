@@ -385,6 +385,7 @@ h2{
     padding: 0 4vw ;
     border-radius: 5px;
     text-transform:initial;
+    cursor: pointer;
 }
 
 
