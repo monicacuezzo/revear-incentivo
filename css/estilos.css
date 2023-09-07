@@ -760,6 +760,7 @@ h2{
     outline: none;
     border: 0;
     margin-top: 20px;
+    cursor: pointer;
 }
 .datos__form-dni {
     background:url(../img/ico-dni.svg) no-repeat 20px 50%;
