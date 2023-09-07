@@ -359,6 +359,34 @@ h2{
     white-space: nowrap;
     margin: 0 2vw;
 }
+#performance>.misdistribuidores{
+    width: 70%;
+    margin: 40px auto 0 auto;
+    text-align: center;
+}
+.misdistribuidores p:nth-child(1){
+    color: #fff;
+    font-size: 2.3vw;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.misdistribuidores p:nth-child(2){
+    color: #FFC510;
+    font-size: 1.15vw;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.misdistribuidores button{
+    background-color: #FFC510;
+    color: #232221;
+    font-size: 1.55vw;
+    font-weight: 600;
+    line-height: 5vw;
+    padding: 0 4vw ;
+    border-radius: 5px;
+    text-transform:initial;
+}
+
 
 #ranking{
     background-color: #fff;
@@ -541,14 +569,15 @@ h2{
 .botonera .btn-participo{
     width: 80%;
     height: 11.7vw;;
-    border-radius: 2.3vw;
+    border-bottom-right-radius: 2.3vw;
+    border-bottom-left-radius: 2.3vw;
     color: #fff;
     background-color: #FFC510;
     text-align: center;
     font-size: 2.5vw;
     font-weight: 600;
     line-height: 2.5vw;
-    margin: -84px auto 10px auto;
+    margin: 0px auto 10px auto;
     cursor: pointer;
 }
 .btn-comun{
@@ -654,6 +683,193 @@ h2{
 .footer .footer__redes-links a div.youtube{font-size: 0.8rem;}
 .footer .footer__redes a .spotify {background: #f5f5f5 url(../img/spotify_grey.png) no-repeat center 35%; color: #fff; margin-bottom: -6px; background-size: 40px 40px;}
 
+.main-login{
+    position: relative;
+}
+.main-login #presentacion, .reg_dis .main-login #presentacion{
+    position: relative;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    min-height: 760px;
+}
+.reg_vd .main-login #presentacion{
+    min-height: 1220px;
+}
+.reg_rep .main-login #presentacion{
+    min-height: 970px;
+}
+.log_dis .main-login #presentacion{
+    min-height: 670px;
+}
+.log_rep .main-login #presentacion{
+    min-height: 815px;
+}
+.main-login .destacado{
+    position: absolute;
+    top: 0;
+    right: 5vw;
+    width: 435px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 34, 33, 1)) , color-stop(40%, rgba(35, 34, 33, 0.1)), color-stop(60%, rgba(0,0,0,0)));
+    background: -o-linear-gradient(top, rgba(35, 34, 33, 1) , rgba(35, 34, 33, 0.1) 40%, rgba(0,0,0,0) 60%);
+    background: linear-gradient(to bottom, rgba(35, 34, 33, 1) , rgba(35, 34, 33, 0.1) 40%, rgba(0,0,0,0) 60%);    
+    text-align: center;
+    padding-bottom: 50px;
+}
+.datos__form{
+    background-color: #fff;
+    width: 85%;
+    height: -webkit-max-content;    height: -moz-max-content;    height: max-content;    margin: auto;
+    -webkit-box-shadow: 0px 1px 3px 0px #00000080;
+    box-shadow: 0px 1px 3px 0px #00000080;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: left;
+}
+.datos__form-label{
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+.datos__form-label span{
+    padding-left: 20px;
+}
+.datos__form-input{
+    height: 60px;
+    width: 100%;
+    border-radius: 9px;
+    border: 2px solid #000;
+    margin: 5px 0 20px 0px;
+    font-size: 18px;
+    line-height: 60px;
+    padding: 0 10px 0 58px;
+    text-transform: none;
+}
+.datos__form-input::placeholder{
+    font-size: 18px;
+    font-weight: 500;
+    color: #BABABA;
+}
+.datos__form-submit{
+    background-color: #FFC510;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    padding: 0;
+    outline: none;
+    border: 0;
+    margin-top: 20px;
+}
+.datos__form-dni {
+    background:url(../img/ico-dni.svg) no-repeat 20px 50%;
+    background-size: 26px;
+}
+.datos__form-mail {
+    background:url(../img/ico-mail.svg) no-repeat 20px 50%;
+    background-size: 26px;
+}
+.datos__form-nom {
+    background:url(../img/ico-ayn.svg) no-repeat 20px 50%;
+    background-size: 26px;
+}
+.datos__form-ape {
+    background:url(../img/ico-ayn.svg) no-repeat 20px 50%;
+    background-size: 26px;
+}
+.datos__form-dis {
+    background:url(../img/ico-dist.svg) no-repeat 20px 50%;
+    background-size: 26px;
+}
+.datos__form-tel {
+    background:url(../img/ico-tel.svg) no-repeat 20px 50%;
+    background-size: 26px;
+}
+.datos__form-rsoc {
+    background:url(../img/ico-iva.svg) no-repeat 20px 50%;
+    background-size: 26px;
+}
+.datos__form-id {
+    background:url(../img/ico-dist.svg) no-repeat 20px 50%;
+    background-size: 26px;
+}
+.datos__form a {
+    display: inline;
+    color: #0010A3;
+    text-decoration: underline;
+}
+.datos__form p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.vendedor #presentacion{
+    position: relative;
+    height: 940px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+  
+.vendedor .destacado{
+    position: absolute;
+    top: 0;
+    right: 5vw;
+    width: 575px;
+    min-width: 575px;
+    background: transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(35, 34, 33, 1)) , color-stop(65%, rgba(35, 34, 33, 0.1)), color-stop(35%, rgba(0,0,0,0)));
+    background: -o-linear-gradient(top, rgba(35, 34, 33, 1) , rgba(35, 34, 33, 0.1) 65%, rgba(0,0,0,0) 35%);
+    background: linear-gradient(to bottom, rgba(35, 34, 33, 1) , rgba(35, 34, 33, 0.1) 65%, rgba(0,0,0,0) 35%);    
+    text-align: center;
+    padding-bottom: 50px;
+}
+.vendedor .destacado__video{
+    width: 85%;
+    margin: 0 auto;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    padding: 0;
+    -webkit-box-sizing: border-box;box-sizing: border-box;
+}
+.vendedor .destacado__video video{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;box-sizing: border-box;
+    -o-object-fit: cover;object-fit: cover;
+}
+.vendedor .destacado__p{
+    width: 85%;
+    margin: auto;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 19px;
+    background-color: #232221;
+    padding: 30px;
+}
+.vendedor .destacado__span{
+    display: block;
+    font-weight: 600;
+    color: #FFC510;
+    margin-top: 20px;
+}
+.pglogin #presentacion__img{
+    display: block;
+}
+
+@media (max-width:991.98px){
+    .vendedor #presentacion {
+        background-position: top right;
+    }
+}
 
 @media (max-width:767.98px){
     .h767max{
@@ -948,11 +1164,127 @@ h2{
     .footer hr {
         margin: 8px auto;
     }
+    .misdistribuidores p:nth-child(1){
+        font-size: 14px;
+    }
+    .misdistribuidores p:nth-child(2){
+        font-size: 10px;
+        width: 225px;
+        margin: 0 auto 20px auto;
+    }
+    .misdistribuidores button {
+        font-size: 12px;
+        line-height: 30px;
+        height: 30px;
+        padding: 0 15px;
+    }
+    .vendedor #presentacion {
+        height: 250vw;
+        max-height: 940px;
+        background-image: none!important;
+        background-color: #525150;
+    }
+    .vendedor .destacado{
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        max-width: 430px;
+        width: 100%;
+        min-width: 300px;
+    }
+    .vendedor .destacado__p{
+        font-size: 12px;
+    }
+    .pglogin header{
+        display: block;
+        min-height: 72px;
+        padding: 0;
+    }
+    .main-login #presentacion, .reg_dis .main-login #presentacion {
+        height: 250vw;
+        max-height: 920px;
+        background-image: none!important;
+        background-color: #212121;
+    }
+    .reg_vd .main-login #presentacion{
+        min-height: 1260px;
+    }
+    .reg_rep .main-login #presentacion{
+        min-height: 1100px;
+    }
+    .log_dis .main-login #presentacion{
+        height: 830px;
+    }
+    .log_rep .main-login #presentacion{
+        min-height: 900px;
+    }
+    .main-login .destacado{
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        max-width: 430px;
+        width: 100%;
+        min-width: 300px;
+    }
+    .main-login #presentacion__img{
+        display: none;
+    }
+    .main-login .datos__form-label,.main-login .datos__form-input:not(.datos__form-submit), .main-login .datos__form-input::placeholder, .main-login .datos__form p, .main-login .datos__form a{
+        font-size: 14px;
+    }
+    .main-login .datos__form p{
+        width: 180px;
+        margin: auto;
+    }
+    .datos__form-dni, .datos__form-mail , .datos__form-nom, .datos__form-ape, .datos__form-dis, .datos__form-tel, .datos__form-id, .datos__form-rsoc{
+        background-size: 20px;
+        background-position: 10px;
+    }
+    .main-login .datos__form-input {
+        height: 50px;
+        margin: 5px 0 10px 0px;
+        line-height: 50px;
+        padding: 0 10px 0 40px;
+    }
+    .main-login .datos__form-label span {
+        padding-left: 10px;
+    }
+    .main-login .datos__form-submit {
+        font-size: 20px;
+        padding: 0;
+    }
 }
 
 @media (max-width:519.98px){
     .popup__cuerpo{
       width: 95%;
+    }
+    .main-login #presentacion, .reg_dis .main-login #presentacion {
+        height: 250vw;
+        max-height: 750px;
+    }
+    .reg_vd .main-login #presentacion {
+        min-height: 1080px;
+    }
+    .reg_rep .main-login #presentacion {
+        min-height: 905px;
+    }
+    .log_dis .main-login #presentacion {
+        min-height: 650px;
+        height: 650px;
+    }
+    .log_rep .main-login #presentacion {
+        min-height: 750px;
+    }
+    .main-login .destacado{
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: 300px;
+        min-width: 300px;
+    }
+    .main-login .destacado__p{
+        font-size: 12px;
     }
 }
 @media (max-width:429.98px){
