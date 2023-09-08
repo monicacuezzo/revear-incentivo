@@ -68,7 +68,7 @@ h2{
     width: 80%;
     margin: auto;
 }
-#performance h2{
+#performance h2, .uf__info h2{
     background: #FFC510;
     line-height: 11vw;
 }
@@ -694,6 +694,11 @@ h2{
     height: max-content;
     min-height: 760px;
 }
+.usu_final .main-login #presentacion {
+    width: 45%;
+    margin-left: 5%;
+    position: static;
+}
 .reg_vd .main-login #presentacion{
     min-height: 1220px;
 }
@@ -727,6 +732,9 @@ h2{
     border-radius: 6px;
     text-align: left;
 }
+.usu_final .datos__form{
+    text-align: center;
+}
 .datos__form-label{
     display: block;
     font-weight: 600;
@@ -747,10 +755,63 @@ h2{
     padding: 0 10px 0 58px;
     text-transform: none;
 }
+.usu_final .datos__form-input:not(.datos__form-submit), .usu_final .datos__form-label{
+    text-align: left;
+    font-size: 18px;
+} 
+
+.datos__form-upload {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    width: 180px;
+    background-color: #fff;
+    color: #FFC510;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px auto 15px auto;
+    padding-left: 50px;
+  }
+  .datos__form-upload input[type="file"] {
+    display: none;
+  }
+  
+  .datos__form-upload span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .datos__form-upload::before {
+    display: block;
+    content: "";  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;  
+    text-align: center;
+    color: #FFC510;
+    border: 2px solid #FFC510;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 0;
+    background:url(../img/ico-upload.svg) no-repeat 10px 35%;
+    background-size: 26px;
+  }
+  
+  
 .datos__form-input::placeholder{
     font-size: 18px;
     font-weight: 500;
     color: #BABABA;
+}
+.datos__form-textarea{
+    height: 220px;
+    line-height: 24px;
+    padding: 15px!important;
 }
 .datos__form-submit{
     background-color: #FFC510;
@@ -795,6 +856,22 @@ h2{
     background:url(../img/ico-dist.svg) no-repeat 20px 50%;
     background-size: 26px;
 }
+.datos__form-dir {
+    background:url(../img/ico-direccion.svg) no-repeat 20px 50%;
+    background-size: 26px;
+}
+.datos__form-loc {
+    background:url(../img/ico-localidad.svg) no-repeat 20px 50%;
+    background-size: 26px;
+}
+.datos__form-cp {
+    background:url(../img/ico-cp.svg) no-repeat 20px 50%;
+    background-size: 26px;
+}
+/* .datos__form-upload {
+    background:url(../img/ico-upload.svg) no-repeat 10px 50%;
+    background-size: 26px;
+} */
 .datos__form a {
     display: inline;
     color: #0010A3;
@@ -804,6 +881,11 @@ h2{
     text-align: center;
     font-weight: 600;
     font-size: 16px;
+}
+.usu_final .datos__form p{
+    font-size: 18px;
+    line-height: 22px;
+    margin: 20px auto;
 }
 
 .vendedor #presentacion{
@@ -865,6 +947,61 @@ h2{
 }
 .pglogin #presentacion__img{
     display: block;
+}
+.usu_final header{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    overflow: hidden;
+}
+.usu_final header img{
+    display: none;
+    width: 100%;
+}
+.uf__info{
+    width: 40%;
+    max-width: 578px;
+    margin-left: 10%;
+}
+.uf__info>*{
+    width: 85%;
+    margin: auto;
+    font-weight: 600;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+.uf__info p{
+    margin: 35px auto;
+}
+.uf__info h2{
+    font-size: 40px;
+    height: 124px;
+    line-height: 124px;
+}
+.usu_final .main-login{
+    position: static;
+}
+.usu_final .destacado{
+    position: absolute;
+    margin: auto;
+    width: 38%;
+    max-width: 551px;
+    right: 12%;
+}
+.usu_final .main-login .datos__form-label span.asterisco, .usu_final span.asterisco{
+    color: #FFC510;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+}
+.usu_final #presentacion__img{
+    width: 95%;
+    height: auto;
+    margin: 60px auto 30px auto;
 }
 
 @media (max-width:991.98px){
@@ -1238,16 +1375,32 @@ h2{
         width: 180px;
         margin: auto;
     }
-    .datos__form-dni, .datos__form-mail , .datos__form-nom, .datos__form-ape, .datos__form-dis, .datos__form-tel, .datos__form-id, .datos__form-rsoc{
+    .usu_final .main-login .datos__form p{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .usu_final #presentacion__img{
+        display: none;
+    }
+    .datos__form-dni, .datos__form-mail , .datos__form-nom, .datos__form-ape, .datos__form-dis, .datos__form-tel, .datos__form-id, .datos__form-rsoc, .datos__form-dir, .datos__form-loc, .datos__form-cp {
         background-size: 20px;
         background-position: 10px;
     }
-    .main-login .datos__form-input {
+    .main-login .datos__form-input:not(.datos__form-textarea) {
         height: 50px;
-        margin: 5px 0 10px 0px;
+        margin: 5px 0px 10px 0px;
         line-height: 50px;
         padding: 0 10px 0 40px;
     }
+    /* .main-login .datos__form-upload{
+       margin: 0px auto 15px auto;
+       font-size: 16px;
+       padding: 0 10px 0 50px;
+    }
+    .datos__form-upload::before {
+        background-size: 20px;
+    } */
+    
     .main-login .datos__form-label span {
         padding-left: 10px;
     }
@@ -1255,6 +1408,67 @@ h2{
         font-size: 20px;
         padding: 0;
     }
+    .usu_final .main-login .datos__form-submit {
+        font-size: 20px;
+        padding: 0;
+        font-weight: 500;
+    }
+    .usu_final header{
+        background-image: none;
+        height: max-content;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        padding: 0;
+    }
+    .usu_final header img{
+        display: block;
+        width: 100%;
+    }
+    .usu_final .main-login{
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        margin: auto;
+    }
+    .usu_final .main-login #presentacion{
+        margin-top: 40px;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        max-height: -webkit-max-content;
+        max-height: -moz-max-content;
+        max-height: max-content;
+    }
+    .uf__info{
+        width: 100%;
+        margin-left: 0;
+    }
+    .usu_final .main-login #presentacion{
+        position: relative;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .usu_final .destacado{
+        position: relative;
+        width: 100%;
+    }
+    .usu_final .datos__form p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .uf__info h2{
+        font-size: 20px;
+        height: 62px;
+        line-height: 62px;
+    }
+    .uf__info>*{
+        font-size: 16px;
+    }
+    .uf__info p{
+        margin: 30px auto;
+    }
+    
 }
 
 @media (max-width:519.98px){
@@ -1285,6 +1499,11 @@ h2{
         width: 300px;
         min-width: 300px;
     }
+    .usu_final .main-login .destacado{
+        left: auto;
+        transform: none;
+        width: 100%;
+    }
     .main-login .destacado__p{
         font-size: 12px;
     }
@@ -1309,5 +1528,32 @@ h2{
     }
     .footer .footer__redes a .spotify {
         margin-bottom: -11px;
+    }
+}
+
+@media (min-width: 1500px){
+    .uf__info {
+        max-width: 45%;
+    }
+    .uf__info p{
+        margin: 50px auto;
+    }
+    .usu_final .destacado {
+        max-width: 38%;
+    }
+    .usu_final header{
+        height: 900px;
+    }
+    .datos__form-input {
+        height: 80px;
+        line-height: 80px;
+        margin: 5px 0 30px 0px;
+    }
+    .datos__form-textarea {
+        height: 400px;
+        line-height: 30px;
+    }
+    .usu_final .datos__form {
+        padding: 50px;
     }
 }
