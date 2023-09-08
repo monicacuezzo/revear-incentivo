@@ -698,6 +698,7 @@ h2{
     width: 45%;
     margin-left: 5%;
     position: static;
+    min-height: 50px;
 }
 .reg_vd .main-login #presentacion{
     min-height: 1220px;
