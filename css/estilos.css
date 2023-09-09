@@ -1553,9 +1553,6 @@ h2{
     .performance__grafico p.porcentaje {
          font-size: 89px;
     }
-    .reg_vd .main-login #presentacion {
-        min-height: 1500px;
-    }
     .vendedor .participacion{
         border-radius: 1.3vw;
         height: 290px;
@@ -1582,7 +1579,7 @@ h2{
         margin: 50px auto;
     }
     .reg_vd .main-login #presentacion {
-        min-height: 1295px;
+        min-height: 1500px;
     }
     .usu_final .destacado {
         max-width: 38%;
