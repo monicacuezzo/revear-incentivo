@@ -12,6 +12,7 @@ img{display: block;}
 .flex{display: -webkit-box;display: -ms-flexbox;display: flex;}
 .hmax{height: -webkit-max-content;height: -moz-max-content;height: max-content;}
 .wmax{width: -webkit-max-content;width: -moz-max-content;width: max-content;}
+.no-wrap{white-space: nowrap;}
 
 body{width: 100vw; background-color: #232221;overflow:overlay;overflow-x: hidden;padding:0!important;}
 ul{list-style: none;margin: 0;padding: 0;}
@@ -869,10 +870,6 @@ h2{
     background:url(../img/ico-cp.svg) no-repeat 20px 50%;
     background-size: 26px;
 }
-/* .datos__form-upload {
-    background:url(../img/ico-upload.svg) no-repeat 10px 50%;
-    background-size: 26px;
-} */
 .datos__form a {
     display: inline;
     color: #0010A3;
@@ -1005,10 +1002,54 @@ h2{
     margin: 60px auto 30px auto;
 }
 
+@media (max-width:1099.98px){
+    .usu_final .main-login .datos__form-submit {
+        font-size: 20px;
+        padding: 0;
+        font-weight: 500;
+    }
+    .usu_final .datos__form p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .uf__info h2{
+        font-size: 20px;
+        height: 62px;
+        line-height: 62px;
+    }
+    .uf__info>*{
+        font-size: 16px;
+    }
+    .uf__info p{
+        margin: 30px auto;
+    }
+    .usu_final .datos__form-dni,.usu_final .datos__form-mail ,.usu_final .datos__form-nom,.usu_final .datos__form-ape,.usu_final .datos__form-dis,.usu_final .datos__form-tel,.usu_final .datos__form-id,.usu_final .datos__form-rsoc,.usu_final .datos__form-dir,.usu_final .datos__form-loc,.usu_final .datos__form-cp {
+        background-size: 20px;
+        background-position: 10px;
+    }
+    .usu_final .main-login .datos__form-input:not(.datos__form-textarea) {
+        height: 50px;
+        margin: 5px 0px 10px 0px;
+        line-height: 50px;
+        padding: 0 10px 0 40px;
+    }
+    .usu_final .main-login .datos__form-label,.usu_final .main-login .datos__form-input:not(.datos__form-submit),.usu_final .main-login .datos__form-input::placeholder,.usu_final .main-login .datos__form p,.usu_final .main-login .datos__form a {
+        font-size: 14px;
+    }
+    .usu_final .destacado {
+        width: 45%;
+        right: 7%;
+    }
+    .usu_final header {
+        height: 900px;
+    }
+}
+
 @media (max-width:991.98px){
     .vendedor #presentacion {
         background-position: top right;
     }
+    
 }
 
 @media (max-width:767.98px){
@@ -1327,7 +1368,9 @@ h2{
     .vendedor .destacado{
         left: 50%;
         right: auto;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
         max-width: 430px;
         width: 100%;
         min-width: 300px;
@@ -1361,7 +1404,9 @@ h2{
     .main-login .destacado{
         left: 50%;
         right: auto;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
         max-width: 430px;
         width: 100%;
         min-width: 300px;
@@ -1393,15 +1438,9 @@ h2{
         line-height: 50px;
         padding: 0 10px 0 40px;
     }
-    /* .main-login .datos__form-upload{
-       margin: 0px auto 15px auto;
-       font-size: 16px;
-       padding: 0 10px 0 50px;
+    .pglogin .main-login .datos__form-input.datos__form-submit {
+        padding: 0 10px;
     }
-    .datos__form-upload::before {
-        background-size: 20px;
-    } */
-    
     .main-login .datos__form-label span {
         padding-left: 10px;
     }
@@ -1409,13 +1448,10 @@ h2{
         font-size: 20px;
         padding: 0;
     }
-    .usu_final .main-login .datos__form-submit {
-        font-size: 20px;
-        padding: 0;
-        font-weight: 500;
-    }
     .usu_final header{
         background-image: none;
+        height: -webkit-max-content;
+        height: -moz-max-content;
         height: max-content;
         width: 100%;
         max-width: 400px;
@@ -1454,25 +1490,16 @@ h2{
         position: relative;
         width: 100%;
     }
-    .usu_final .datos__form p{
-        font-size: 14px;
-        line-height: 18px;
-    }
-    .uf__info h2{
-        font-size: 20px;
-        height: 62px;
-        line-height: 62px;
-    }
-    .uf__info>*{
-        font-size: 16px;
-    }
-    .uf__info p{
-        margin: 30px auto;
-    }
     
 }
 
 @media (max-width:519.98px){
+    .footer__logo a{
+        margin: auto;
+    }
+    .footer__logo a img{
+        width: 250px;
+    }
     .popup__cuerpo{
       width: 95%;
     }
@@ -1480,29 +1507,36 @@ h2{
         height: 250vw;
         max-height: 750px;
     }
-    .reg_vd .main-login #presentacion {
-        min-height: 1080px;
-    }
-    .reg_rep .main-login #presentacion {
-        min-height: 905px;
-    }
-    .log_dis .main-login #presentacion {
-        min-height: 650px;
-        height: 650px;
-    }
-    .log_rep .main-login #presentacion {
-        min-height: 750px;
+    
+    .pglogin .main-login #presentacion {
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        min-height: -webkit-max-content;
+        min-height: -moz-max-content;
+        min-height: max-content;
+        max-height: -webkit-max-content;
+        max-height: -moz-max-content;
+        max-height: max-content;
     }
     .main-login .destacado{
         left: 50%;
         right: auto;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
         width: 300px;
         min-width: 300px;
     }
+    .pglogin .destacado{
+        position: relative;
+        width: 100%;
+    }
     .usu_final .main-login .destacado{
         left: auto;
-        transform: none;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
         width: 100%;
     }
     .main-login .destacado__p{
