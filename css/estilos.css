@@ -1549,28 +1549,6 @@ h2{
     }
 }
 
-@media (min-width:2000px){
-    .performance__grafico p.porcentaje {
-         font-size: 89px;
-    }
-    .vendedor .participacion{
-        border-radius: 1.3vw;
-        height: 290px;
-    }
-    .datos__form-input {
-        height: 80px;
-        line-height: 80px;
-        margin: 5px 0 30px 0px;
-    }
-    .footer, .footer .footer__links a,.footer h2{
-        font-size: 1.2vw;
-        line-height: 1.5vw;
-    }
-    .footer .footer__redes a .spotify {
-        margin-bottom: -11px;
-    }
-}
-
 @media (min-width: 1500px){
     .uf__info {
         max-width: 45%;
@@ -1579,7 +1557,10 @@ h2{
         margin: 50px auto;
     }
     .reg_vd .main-login #presentacion {
-        min-height: 1500px;
+        min-height: 1300px;
+    }
+    .reg_rep .main-login #presentacion{
+        min-height: 1100px;
     }
     .usu_final .destacado {
         max-width: 38%;
@@ -1601,5 +1582,33 @@ h2{
     }
     .pglogin .main-login .destacado{
         width: 600px;
+    }
+}
+
+@media (min-width:2000px){
+    .performance__grafico p.porcentaje {
+         font-size: 89px;
+    }
+    .vendedor .participacion{
+        border-radius: 1.3vw;
+        height: 290px;
+    }
+    .reg_vd .main-login #presentacion {
+        min-height: 1500px;
+    }
+    .reg_rep .main-login #presentacion{
+        min-height: 1200px;
+    }
+    .datos__form-input {
+        height: 80px;
+        line-height: 80px;
+        margin: 5px 0 30px 0px;
+    }
+    .footer, .footer .footer__links a,.footer h2{
+        font-size: 1.2vw;
+        line-height: 1.5vw;
+    }
+    .footer .footer__redes a .spotify {
+        margin-bottom: -11px;
     }
 }
