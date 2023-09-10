@@ -677,7 +677,8 @@ h2{
         -ms-flex-pack: end;
             justify-content: end;
 }
-.footer .footer__redes-links a div{background-color: #f5f5f5; color: #616262;border-radius: 50%; width: 30px;height: 30px;font-size: 15px;line-height: 30px; display: inline-block;text-align: center;margin-top: 4px;-webkit-transition: all .6s;-o-transition: all .6s;transition: all .6s;}
+.footer .footer__redes-links a div{background-color: #f5f5f5; color: #616262;border-radius: 50%; width: 30px;height: 30px;font-size: 15px;line-height: 30px; /*display: inline-block;*/text-align: center;margin-top: 4px;-webkit-transition: all .6s;-o-transition: all .6s;transition: all .6s;
+    display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;}
 .footer .footer__redes-links a div:hover{opacity: 0.6;}
 .footer .footer__redes-links a{margin: 3px 6px;}
 .footer .footer__redes-links a:first-child{margin-left: 0;}
